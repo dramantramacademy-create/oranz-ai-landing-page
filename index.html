@@ -1,0 +1,3442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>OranzAI | AI won't replace creators. It will reveal them.</title>
+  <meta name="description"
+    content="OranzAI is a movement for India's video editors, animators and designers, building the taste, judgment and story sense AI can't replace.">
+  <meta property="og:title" content="OranzAI | AI won't replace creators. It will reveal them.">
+  <meta property="og:description" content="A movement for India's storytellers. Come build what AI can't.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1C1A33">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><mask id='fav_m' maskUnits='userSpaceOnUse' x='0' y='0' width='200' height='200'><rect width='200' height='200' fill='%23fff'/><path d='M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z' fill='none' stroke='%23000' stroke-width='3.5' stroke-linejoin='round'/><path d='M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z' fill='none' stroke='%23000' stroke-width='3.5' stroke-linejoin='round'/><path d='M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z' fill='none' stroke='%23000' stroke-width='3.5' stroke-linejoin='round'/><path d='M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z' fill='none' stroke='%23000' stroke-width='3.5' stroke-linejoin='round'/><path d='M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z' fill='none' stroke='%23000' stroke-width='3.5' stroke-linejoin='round'/><path d='M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z' fill='none' stroke='%23000' stroke-width='3.5' stroke-linejoin='round'/></mask></defs><g transform='translate(100 112) scale(0.86) translate(-100 -100)'><circle cx='100' cy='100' r='90' fill='none' stroke='%23D2500F' stroke-width='10'/><g mask='url(%23fav_m)'><path d='M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z' fill='%23F26A1B'/><path d='M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z' fill='%23FF9A4A'/><path d='M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z' fill='%23F26A1B'/><path d='M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z' fill='%23FF9A4A'/><path d='M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z' fill='%23F26A1B'/><path d='M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z' fill='%23FF9A4A'/></g></g><path d='M100 30 L100 20' stroke='%23FFF1E6' stroke-width='5' stroke-linecap='round' fill='none'/><g transform='translate(100 21) rotate(-28)'><path d='M0 0 Q20 -15 42 0 Q20 15 0 0 Z' fill='%23FFF1E6'/></g></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Mukta:wght@500;700&family=IBM+Plex+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ==============================
+   DESIGN TOKENS
+   ============================== */
+    :root {
+      --night: #1C1A33;
+      --night-2: #15132A;
+      --card: #221F3A;
+      --orange: #F26A1B;
+      --pulp: #FF9A4A;
+      --rind: #D2500F;
+      --pith: #FFF1E6;
+      --mute: #57506E;
+      --mute-d: #C9C4DE;
+      --faint: #8C87A6;
+      --display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+      --serif: "Instrument Serif", Georgia, serif;
+      --hindi: "Mukta", "Nirmala UI", sans-serif;
+      --mono: "IBM Plex Mono", "Courier New", monospace;
+      --ease: cubic-bezier(.2, .8, .2, 1);
+      --ease-bounce: cubic-bezier(.34, 1.56, .64, 1);
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+      background: var(--night)
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 80px);
+      overflow-x: hidden
+    }
+
+    body {
+      margin: 0;
+      background: var(--night);
+      color: #fff;
+      font-family: var(--display);
+      font-size: 18px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden
+    }
+
+    svg {
+      max-width: 100%
+    }
+
+    a {
+      color: inherit
+    }
+
+    ::selection {
+      background: var(--orange);
+      color: var(--night)
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--pulp);
+      outline-offset: 3px;
+      border-radius: 6px
+    }
+
+    /* ==============================
+   LOADING SCREEN
+   ============================== */
+    .loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--night);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .6s, visibility .6s
+    }
+
+    .loader.done {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none
+    }
+
+    .loader-iris {
+      width: 80px;
+      height: 80px;
+      animation: loaderSpin 1.5s var(--ease) infinite
+    }
+
+    @keyframes loaderSpin {
+      0% {
+        transform: rotate(0) scale(1)
+      }
+
+      50% {
+        transform: rotate(180deg) scale(.85)
+      }
+
+      100% {
+        transform: rotate(360deg) scale(1)
+      }
+    }
+
+    /* ==============================
+   SCROLL PROGRESS BAR
+   ============================== */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--pulp));
+      z-index: 100;
+      width: 0;
+      transition: none
+    }
+
+    /* ==============================
+   CURSOR GLOW (desktop only)
+   ============================== */
+    .cursor-glow {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(242, 106, 27, .08), transparent 60%);
+      pointer-events: none;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      transition: opacity .3s;
+      opacity: 0
+    }
+
+    .cursor-glow.active {
+      opacity: 1
+    }
+
+    /* ==============================
+   LAYOUT
+   ============================== */
+    .wrap {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    .sec {
+      padding: clamp(88px, 12vw, 160px) 0
+    }
+
+    .light {
+      background: var(--pith);
+      color: var(--night)
+    }
+
+    .dark2 {
+      background: var(--night-2)
+    }
+
+    .orange {
+      background: var(--orange);
+      color: var(--night)
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: -.045em;
+      line-height: .96
+    }
+
+    p {
+      margin: 0
+    }
+
+    em.s {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -.01em
+    }
+
+    .kick {
+      font-family: var(--mono);
+      font-size: 14px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--pulp);
+      margin-bottom: 22px
+    }
+
+    .light .kick {
+      color: var(--rind)
+    }
+
+    .say {
+      font-size: clamp(44px, 6.4vw, 92px)
+    }
+
+    .whisper {
+      font-size: clamp(18px, 1.8vw, 23px);
+      color: var(--mute-d);
+      margin-top: 22px;
+      max-width: 36em
+    }
+
+    .light .whisper {
+      color: var(--mute)
+    }
+
+    .center {
+      text-align: center
+    }
+
+    .center .whisper {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .hot {
+      color: var(--orange)
+    }
+
+    /* ==============================
+   REVEAL ANIMATIONS (enhanced with stagger)
+   ============================== */
+    .rv {
+      opacity: 0;
+      transform: translateY(42px) scale(.97);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+      will-change: opacity, transform
+    }
+
+    .rv.in {
+      opacity: 1;
+      transform: none
+    }
+
+    .rv.d1 {
+      transition-delay: .12s
+    }
+
+    .rv.d2 {
+      transition-delay: .24s
+    }
+
+    .rv.d3 {
+      transition-delay: .36s
+    }
+
+    .rv.d4 {
+      transition-delay: .48s
+    }
+
+    /* slide from left / right */
+    .rv-left {
+      opacity: 0;
+      transform: translateX(-60px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease)
+    }
+
+    .rv-right {
+      opacity: 0;
+      transform: translateX(60px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease)
+    }
+
+    .rv-left.in,
+    .rv-right.in {
+      opacity: 1;
+      transform: none
+    }
+
+    /* scale up */
+    .rv-scale {
+      opacity: 0;
+      transform: scale(.85);
+      transition: opacity .8s var(--ease), transform .8s var(--ease)
+    }
+
+    .rv-scale.in {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ==============================
+   NAV (simple clean header)
+   ============================== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      padding-top: env(safe-area-inset-top, 0px);
+      background: rgba(21, 19, 42, .92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .nav .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: -.03em;
+      color: #fff
+    }
+
+    .brand .ai {
+      color: var(--pulp)
+    }
+
+    .brand svg {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 28px
+    }
+
+    .links a {
+      text-decoration: none;
+      color: var(--mute-d);
+      font-weight: 600;
+      font-size: 15px;
+      transition: color .2s ease
+    }
+
+    .links a:hover {
+      color: #fff
+    }
+
+    /* ==============================
+   BUTTONS (enhanced with ripple)
+   ============================== */
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 13px 26px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: none;
+      overflow: hidden;
+      white-space: nowrap;
+      transition: transform .3s var(--ease), box-shadow .3s var(--ease), background .3s
+    }
+
+    .btn svg {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      transition: transform .3s var(--ease)
+    }
+
+    .btn:hover {
+      transform: translateY(-3px)
+    }
+
+    .btn:hover svg {
+      transform: translateX(4px)
+    }
+
+    .btn:active {
+      transform: translateY(0) scale(.97)
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: var(--night);
+      box-shadow: 0 10px 30px -10px rgba(242, 106, 27, .6)
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 16px 40px -10px rgba(242, 106, 27, .7)
+    }
+
+    .btn-ghost {
+      border: 2px solid #4A4668;
+      color: #fff
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--pulp);
+      box-shadow: 0 0 20px rgba(255, 154, 74, .15)
+    }
+
+    .btn-dark {
+      background: var(--night);
+      color: #fff
+    }
+
+    .btn-sm {
+      min-height: 44px;
+      padding: 9px 18px;
+      font-size: 15px
+    }
+
+    .btn-text-short {
+      display: none
+    }
+
+    .btn-text-full {
+      display: inline
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px
+    }
+
+    .center .btns {
+      justify-content: center
+    }
+
+    /* Ripple effect */
+    .btn .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .3);
+      transform: scale(0);
+      animation: ripple .6s ease-out forwards;
+      pointer-events: none
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0
+      }
+    }
+
+    /* ==============================
+   HERO (enhanced with typewriter + particles - rich screen presence)
+   ============================== */
+    .hero {
+      position: relative;
+      height: 100svh;
+      min-height: 580px;
+      max-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: clamp(70px, 10vh, 94px) 24px clamp(20px, 4vh, 40px);
+      box-sizing: border-box;
+      overflow: hidden
+    }
+
+    .hero .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-height: 100%;
+      width: 100%
+    }
+
+    .hero .glow {
+      position: absolute;
+      width: min(940px, 100vw);
+      height: min(940px, 100vh);
+      left: 50%;
+      top: 44%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(242, 106, 27, .26), transparent 62%);
+      pointer-events: none;
+      animation: glowPulse 6s ease-in-out infinite
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        opacity: .75;
+        transform: translate(-50%, -50%) scale(1)
+      }
+
+      50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.08)
+      }
+    }
+
+    /* Floating particles */
+    .particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--orange);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat linear infinite
+    }
+
+    @keyframes particleFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(100vh) scale(0)
+      }
+
+      10% {
+        opacity: .6
+      }
+
+      90% {
+        opacity: .6
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-10vh) scale(1)
+      }
+    }
+
+    .iris-wrap {
+      width: clamp(180px, min(39vh, 410px), 72vw);
+      max-height: 39vh;
+      aspect-ratio: 1/1;
+      margin: 0 auto;
+      transition: transform .2s linear;
+      will-change: transform;
+      flex-shrink: 0
+    }
+
+    .iris-hero {
+      width: 100%;
+      height: 100%;
+      display: block
+    }
+
+    @keyframes open {
+      from {
+        transform: rotate(-120deg) scale(.4);
+        opacity: 0
+      }
+
+      to {
+        transform: none;
+        opacity: 1
+      }
+    }
+
+    @keyframes rays {
+      from {
+        opacity: 0;
+        transform: scale(.7)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(28px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .iris-hero .blades {
+      transform-box: fill-box;
+      transform-origin: 50% 50%;
+      animation: open 1.8s var(--ease) both
+    }
+
+    .iris-hero .rays {
+      transform-origin: 50% 50%;
+      animation: rays 1.2s 1s ease-out both, spin 90s 2.2s linear infinite
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, min(5.8vw, 6.4vh), 78px);
+      line-height: 1.0;
+      margin-top: clamp(8px, 1.5vh, 16px);
+      animation: rise .9s 1.4s var(--ease) both
+    }
+
+    .hero h1 em.s {
+      color: var(--orange);
+      font-size: 1.08em
+    }
+
+    /* Typewriter cursor */
+    .hero h1 .typewriter-cursor {
+      display: inline-block;
+      width: 3.5px;
+      height: .85em;
+      background: var(--orange);
+      margin-left: 5px;
+      animation: blink 1s steps(1) infinite;
+      vertical-align: text-bottom
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0
+      }
+    }
+
+    .hero .whisper {
+      font-size: clamp(16px, 2.1vh, 21px);
+      line-height: 1.35;
+      margin-top: clamp(8px, 1.5vh, 16px);
+      max-width: 36em;
+      animation: rise .9s 1.7s var(--ease) both
+    }
+
+    .hero .btns {
+      margin-top: clamp(16px, 2.6vh, 28px);
+      justify-content: center;
+      gap: 14px;
+      animation: rise .9s 1.9s var(--ease) both
+    }
+
+    .hero .btn {
+      min-height: 54px;
+      padding: 13px 28px;
+      font-size: 18px
+    }
+
+    .scrollcue {
+      position: absolute;
+      bottom: clamp(8px, 1.5vh, 20px);
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .2em;
+      color: var(--faint);
+      animation: rise .9s 2.3s both
+    }
+
+    .scrollcue::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 20px;
+      background: var(--faint);
+      margin: 6px auto 0;
+      animation: scrollLine 2s ease-in-out infinite
+    }
+
+    @keyframes scrollLine {
+
+      0%,
+      100% {
+        transform: scaleY(1);
+        opacity: 1
+      }
+
+      50% {
+        transform: scaleY(.3);
+        opacity: .4
+      }
+    }
+
+    /* ==============================
+   WALL (Grid of thumbnails with responsive play focal area)
+   ============================== */
+    .wall {
+      display: block;
+      width: 100%;
+      max-width: 1120px;
+      height: auto;
+      aspect-ratio: 1200 / 420;
+      margin: 48px auto 0;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #18162A;
+      box-shadow: 0 16px 40px -12px rgba(0, 0, 0, .5)
+    }
+
+    .wall rect {
+      transition: fill .6s var(--ease)
+    }
+
+    .wall.lit rect.hot {
+      fill: var(--orange)
+    }
+
+    .wall .star {
+      transform-box: fill-box;
+      transform-origin: 50% 50%;
+      transform: scale(0);
+      transition: transform 1s .4s var(--ease)
+    }
+
+    .wall.lit .star {
+      transform: scale(1)
+    }
+
+    /* ==============================
+   TRIO (tilt cards)
+   ============================== */
+    .trio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 64px
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 28px;
+      overflow: hidden;
+      transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+      will-change: transform
+    }
+
+    .card:hover {
+      box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .7)
+    }
+
+    .card svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #1A1830
+    }
+
+    .card .t {
+      padding: 26px 28px 30px
+    }
+
+    .card h3 {
+      font-size: clamp(40px, 4vw, 56px)
+    }
+
+    .card p {
+      color: var(--mute-d);
+      margin-top: 8px
+    }
+
+    /* ==============================
+   PURPOSE
+   ============================== */
+    .purpose {
+      position: relative;
+      overflow: hidden
+    }
+
+    .purpose .bg {
+      position: absolute;
+      right: -10%;
+      top: 50%;
+      width: min(760px, 90vw);
+      height: auto;
+      transform: translateY(-50%);
+      opacity: .2;
+      animation: spin 120s linear infinite
+    }
+
+    .purpose h2 {
+      position: relative;
+      font-size: clamp(40px, 6.6vw, 96px);
+      max-width: 13em;
+      line-height: 1.0
+    }
+
+    .purpose h2 em.s {
+      color: var(--night)
+    }
+
+    /* ==============================
+   CRAFTS
+   ============================== */
+    .crafts {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .logo-diagram {
+      width: 100%;
+      height: auto;
+      overflow: visible;
+      display: block
+    }
+
+    /* ==============================
+   PATHS TABS (enhanced)
+   ============================== */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 40px
+    }
+
+    .tab {
+      font: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      min-height: 48px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: 2px solid #3A3658;
+      background: transparent;
+      color: var(--mute-d);
+      cursor: pointer;
+      transition: all .3s var(--ease);
+      position: relative;
+      overflow: hidden
+    }
+
+    .tab:hover {
+      color: #fff;
+      border-color: var(--pulp);
+      transform: translateY(-2px)
+    }
+
+    .tab[aria-selected="true"] {
+      background: var(--pith);
+      border-color: var(--pith);
+      color: var(--night);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px -8px rgba(255, 241, 230, .3)
+    }
+
+    .panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      margin-top: 44px
+    }
+
+    .panel[hidden] {
+      display: none
+    }
+
+    .panel.show .ptext,
+    .panel.show .pv {
+      animation: rise .6s var(--ease) both
+    }
+
+    .panel.show .pv {
+      animation-delay: .1s
+    }
+
+    .ptext h3 {
+      font-size: clamp(36px, 4vw, 56px)
+    }
+
+    .ptext p.lead {
+      font-size: 22px;
+      color: var(--pith);
+      margin-top: 12px
+    }
+
+    .ptext ul {
+      list-style: none;
+      padding: 0;
+      margin: 26px 0 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .ptext li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--mute-d);
+      transition: transform .3s var(--ease), color .3s
+    }
+
+    .ptext li:hover {
+      color: #fff;
+      transform: translateX(6px)
+    }
+
+    .ptext li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--orange);
+      margin-top: 9px;
+      flex-shrink: 0;
+      transition: transform .3s var(--ease)
+    }
+
+    .ptext li:hover::before {
+      transform: scale(1.4)
+    }
+
+    .pv {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px
+    }
+
+    @keyframes sweep {
+      0% {
+        transform: translateX(0)
+      }
+
+      100% {
+        transform: translateX(360px)
+      }
+    }
+
+    .pv .playhead {
+      animation: sweep 4s ease-in-out infinite alternate
+    }
+
+    @keyframes ease {
+      0% {
+        transform: translateX(0)
+      }
+
+      100% {
+        transform: translateX(440px)
+      }
+    }
+
+    .pv .ball {
+      animation: ease 2.2s cubic-bezier(.65, 0, .35, 1) infinite alternate
+    }
+
+    @keyframes nudge {
+
+      0%,
+      100% {
+        transform: none
+      }
+
+      50% {
+        transform: translateY(-8px)
+      }
+    }
+
+    .pv .blk.b {
+      animation: nudge 3s ease-in-out infinite
+    }
+
+    .pv .blk.c {
+      animation: nudge 3s 1.5s ease-in-out infinite
+    }
+
+    .pv .card1 {
+      animation: nudge 2.6s ease-in-out infinite
+    }
+
+    /* ==============================
+   SIGNAL (profile card)
+   ============================== */
+    .signal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .profile {
+      background: #fff;
+      color: var(--night);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: 0 40px 80px -40px rgba(28, 26, 51, .45);
+      transform: rotate(-1.5deg);
+      transition: transform .5s var(--ease), box-shadow .5s var(--ease)
+    }
+
+    .profile:hover {
+      transform: rotate(0deg) translateY(-6px);
+      box-shadow: 0 50px 90px -40px rgba(28, 26, 51, .5)
+    }
+
+    .profile .who {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 26px
+    }
+
+    .profile .av {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 26px;
+      color: var(--night);
+      transition: transform .3s var(--ease-bounce)
+    }
+
+    .profile:hover .av {
+      transform: scale(1.1)
+    }
+
+    .profile .nm {
+      font-weight: 800;
+      font-size: 24px
+    }
+
+    .profile .rl {
+      color: var(--mute);
+      font-size: 16px
+    }
+
+    .bar {
+      margin-top: 16px
+    }
+
+    .bar .row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 16px
+    }
+
+    .bar .track {
+      height: 12px;
+      border-radius: 6px;
+      background: #EADFD6;
+      margin-top: 6px;
+      overflow: hidden
+    }
+
+    .bar .fill {
+      height: 100%;
+      width: 0;
+      border-radius: 6px;
+      background: linear-gradient(90deg, var(--orange), var(--pulp));
+      transition: width 1.4s var(--ease)
+    }
+
+    .signal.in .bar .fill {
+      width: var(--w)
+    }
+
+    .profile .note {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--mute);
+      margin-top: 18px
+    }
+
+    /* ==============================
+   BELIEFS MARQUEE
+   ============================== */
+    .marq {
+      overflow: hidden;
+      border-block: 2px solid #E0D2C4;
+      padding: 26px 0;
+      margin-top: 48px
+    }
+
+    .marq .track {
+      display: flex;
+      gap: 64px;
+      width: max-content;
+      animation: marq 40s linear infinite
+    }
+
+    .marq:hover .track {
+      animation-play-state: paused
+    }
+
+    .marq span {
+      font-size: clamp(34px, 5vw, 72px);
+      font-weight: 800;
+      letter-spacing: -.045em;
+      white-space: nowrap;
+      transition: color .3s
+    }
+
+    .marq span:nth-child(even) {
+      color: var(--rind)
+    }
+
+    .marq span em.s {
+      font-weight: 400
+    }
+
+    @keyframes marq {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* ==============================
+   WATCH (episodes)
+   ============================== */
+    .watch {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 56px
+    }
+
+    .ep {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform .4s var(--ease)
+    }
+
+    .ep:hover {
+      transform: translateY(-6px)
+    }
+
+    .ep .thumb {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16/9
+    }
+
+    .ep .thumb svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: transform .6s var(--ease)
+    }
+
+    .ep:hover .thumb svg {
+      transform: scale(1.05)
+    }
+
+    .ep .badge {
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--night);
+      background: var(--pith)
+    }
+
+    .ep .badge.new {
+      background: var(--orange)
+    }
+
+    .ep .play {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--pith);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .3s var(--ease-bounce), box-shadow .3s
+    }
+
+    .ep:hover .play {
+      transform: scale(1.15);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .3)
+    }
+
+    .ep .play svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .ep .num {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--pulp)
+    }
+
+    .ep .hi {
+      font-family: var(--hindi);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.3
+    }
+
+    .ep .en {
+      color: var(--mute-d);
+      font-size: 16px
+    }
+
+    /* ==============================
+   STATS COUNTER
+   ============================== */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: clamp(40px, 6vw, 80px);
+      margin-top: 60px;
+      flex-wrap: wrap
+    }
+
+    .stat {
+      text-align: center
+    }
+
+    .stat-number {
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 800;
+      letter-spacing: -.04em;
+      color: var(--orange);
+      line-height: 1
+    }
+
+    .stat-label {
+      font-size: 16px;
+      color: var(--mute-d);
+      margin-top: 6px;
+      font-weight: 600
+    }
+
+    /* ==============================
+   FAQ (enhanced accordion)
+   ============================== */
+    .faq {
+      max-width: 860px;
+      margin: 48px auto 0
+    }
+
+    .faq details {
+      border-top: 2px solid #E0D2C4;
+      padding: 22px 0;
+      transition: background .3s
+    }
+
+    .faq details:last-child {
+      border-bottom: 2px solid #E0D2C4
+    }
+
+    .faq details[open] {
+      background: rgba(210, 80, 15, .04);
+      border-radius: 8px;
+      padding: 22px 16px
+    }
+
+    .faq summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      min-height: 44px;
+      align-items: center;
+      transition: color .3s
+    }
+
+    .faq summary:hover {
+      color: var(--rind)
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none
+    }
+
+    .faq summary::after {
+      content: "+";
+      font-weight: 400;
+      font-size: 34px;
+      color: var(--rind);
+      transition: transform .4s var(--ease), color .3s;
+      line-height: 1
+    }
+
+    .faq details[open] summary::after {
+      transform: rotate(135deg)
+    }
+
+    .faq details p {
+      color: var(--mute);
+      margin-top: 10px;
+      font-size: 18px;
+      max-width: 40em;
+      animation: faqOpen .4s var(--ease)
+    }
+
+    @keyframes faqOpen {
+      from {
+        opacity: 0;
+        transform: translateY(-8px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    /* ==============================
+   FINAL CTA
+   ============================== */
+    .final {
+      position: relative;
+      overflow: hidden;
+      text-align: center
+    }
+
+    .final h2 {
+      font-size: clamp(58px, 9.6vw, 140px);
+      position: relative
+    }
+
+    .final h2 em.s {
+      color: var(--night)
+    }
+
+    .final .btns {
+      margin-top: 40px;
+      justify-content: center;
+      position: relative
+    }
+
+    .final .fl {
+      position: absolute;
+      opacity: .35;
+      animation: nudge 6s ease-in-out infinite
+    }
+
+    /* ==============================
+   FOOTER
+   ============================== */
+    footer {
+      background: var(--night-2);
+      padding: 44px 0
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap
+    }
+
+    footer small {
+      color: var(--faint);
+      font-size: 14px
+    }
+
+    footer nav {
+      display: flex;
+      gap: 22px
+    }
+
+    footer nav a {
+      text-decoration: none;
+      color: var(--mute-d);
+      transition: color .3s
+    }
+
+    footer nav a:hover {
+      color: var(--pulp)
+    }
+
+    /* ==============================
+   BACK TO TOP
+   ============================== */
+    .back-to-top {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: var(--night);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 15;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all .4s var(--ease);
+      box-shadow: 0 8px 24px rgba(242, 106, 27, .4)
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: none
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(242, 106, 27, .5)
+    }
+
+    .back-to-top svg {
+      width: 24px;
+      height: 24px
+    }
+
+    /* ==============================
+   TOOLTIP (for interactive elements)
+   ============================== */
+    [data-tooltip] {
+      position: relative
+    }
+
+    [data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--night);
+      color: var(--pith);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .3);
+      animation: tooltipIn .2s var(--ease);
+      z-index: 10
+    }
+
+    @keyframes tooltipIn {
+      from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(4px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(-50%)
+      }
+    }
+
+    /* ==============================
+   RESPONSIVE
+   ============================== */
+    @media (max-width:900px) {
+      .back-to-top {
+        display: none !important
+      }
+
+      .links {
+        gap: 20px
+      }
+
+      .trio,
+      .watch,
+      .crafts,
+      .panel,
+      .signal {
+        grid-template-columns: 1fr
+      }
+
+      .purpose .bg {
+        right: -35%;
+        opacity: .14
+      }
+
+      .profile {
+        transform: none
+      }
+
+      .stats {
+        gap: 30px
+      }
+
+      .scrollcue {
+        display: none !important
+      }
+
+      .wall {
+        aspect-ratio: 16 / 9;
+        max-height: 340px;
+        margin-top: 36px;
+        border-radius: 14px
+      }
+    }
+
+    @media (max-width:768px) {
+      .links {
+        display: none !important
+      }
+
+      .btn-text-full {
+        display: none
+      }
+
+      .btn-text-short {
+        display: inline
+      }
+
+      .nav .wrap {
+        height: 60px;
+        padding: 0 20px
+      }
+
+      .brand {
+        font-size: 20px;
+        gap: 8px
+      }
+
+      .brand svg {
+        width: 32px;
+        height: 32px
+      }
+
+      .nav .btn {
+        min-height: 38px;
+        height: 38px;
+        padding: 0 14px;
+        font-size: 14px;
+        gap: 6px;
+        flex-shrink: 0;
+        white-space: nowrap
+      }
+
+      .nav .btn svg {
+        width: 16px;
+        height: 16px
+      }
+
+      .hero {
+        height: auto;
+        min-height: 100svh;
+        min-height: 100dvh;
+        max-height: none;
+        padding: calc(60px + env(safe-area-inset-top, 0px) + 20px) 20px clamp(48px, 8vh, 72px);
+        box-sizing: border-box;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%
+      }
+
+      .hero .wrap {
+        max-height: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+      }
+
+      .iris-wrap {
+        width: clamp(140px, 36vw, 190px);
+        max-height: none;
+        margin: 0 auto
+      }
+
+      .hero h1 {
+        font-size: clamp(28px, 7.2vw, 42px);
+        line-height: 1.08;
+        margin-top: 16px;
+        letter-spacing: -.035em
+      }
+
+      .hero .whisper {
+        font-size: 16px;
+        line-height: 1.45;
+        margin-top: 12px;
+        max-width: 24em
+      }
+
+      .hero .btns {
+        margin-top: 24px;
+        margin-bottom: 0;
+        width: 100%;
+        max-width: 320px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px
+      }
+
+      .hero .btn {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 20px;
+        font-size: 15px
+      }
+
+      .final .btns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .final .btn {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 20px;
+        font-size: 15px
+      }
+    }
+
+    @media (max-width:600px) {
+      .wall {
+        aspect-ratio: 4 / 3;
+        max-height: 280px;
+        margin-top: 28px;
+        border-radius: 12px
+      }
+    }
+
+    @media (max-width:520px) {
+      .nav .wrap {
+        padding: 0 16px
+      }
+
+      .btns .btn {
+        width: 100%;
+        max-width: 320px
+      }
+    }
+
+    @media (max-width:400px) {
+      .nav .wrap {
+        height: 56px;
+        padding: 0 14px
+      }
+
+      .brand {
+        font-size: 18px
+      }
+
+      .brand svg {
+        width: 28px;
+        height: 28px
+      }
+
+      .nav .btn {
+        height: 34px;
+        min-height: 34px;
+        padding: 0 12px;
+        font-size: 13px;
+        gap: 5px
+      }
+
+      .wall {
+        aspect-ratio: 1 / 1;
+        max-height: 260px;
+        margin-top: 22px;
+        border-radius: 10px
+      }
+
+      .hero .btns,
+      .final .btns {
+        max-width: 290px
+      }
+
+      .hero .btn,
+      .final .btn {
+        min-height: 44px;
+        padding: 10px 16px;
+        font-size: 14px;
+        gap: 8px
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important
+      }
+
+      html {
+        scroll-behavior: auto
+      }
+
+      .rv,
+      .rv-left,
+      .rv-right,
+      .rv-scale {
+        opacity: 1;
+        transform: none
+      }
+
+      .wall rect.hot {
+        fill: var(--orange)
+      }
+
+      .wall .star {
+        transform: none
+      }
+
+      .bar .fill {
+        width: var(--w)
+      }
+
+      .loader {
+        display: none
+      }
+
+      .cursor-glow {
+        display: none
+      }
+
+      .particles {
+        display: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <svg class="loader-iris" viewBox="0 0 200 200" aria-hidden="true">
+      <g transform="translate(100 112) scale(0.86) translate(-100 -100)">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#D2500F" stroke-width="10" />
+        <path
+          d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+          fill="#F26A1B" />
+        <path
+          d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+          fill="#FF9A4A" />
+        <path
+          d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+          fill="#F26A1B" />
+        <path
+          d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+          fill="#FF9A4A" />
+        <path
+          d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+          fill="#F26A1B" />
+        <path
+          d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+          fill="#FF9A4A" />
+      </g>
+    </svg>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="OranzAI home"><svg width="42" height="42" viewBox="0 0 200 200"
+          aria-hidden="true">
+          <defs>
+            <mask id="nm" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+              <rect width="200" height="200" fill="#fff" />
+              <path
+                d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            </mask>
+          </defs>
+          <g transform="translate(100 112) scale(0.86) translate(-100 -100)">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="#D2500F" stroke-width="10" />
+            <g mask="url(#nm)">
+              <path
+                d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                fill="#F26A1B" />
+              <path
+                d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                fill="#FF9A4A" />
+              <path
+                d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                fill="#F26A1B" />
+              <path
+                d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                fill="#FF9A4A" />
+              <path
+                d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                fill="#F26A1B" />
+              <path
+                d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                fill="#FF9A4A" />
+            </g>
+          </g>
+          <path d="M100 30 L100 20" stroke="#FFF1E6" stroke-width="5" stroke-linecap="round" fill="none" />
+          <g transform="translate(100 21) rotate(-28)">
+            <path d="M0 0 Q20 -15 42 0 Q20 15 0 0 Z" fill="#FFF1E6" />
+          </g>
+        </svg><span>Oranz<span class="ai">AI</span></span></a>
+      <nav class="links" aria-label="Main"><a href="#why">Why</a><a href="#paths">Paths</a><a href="#watch">Watch</a><a
+          href="#faq">FAQ</a></nav>
+      <a class="btn btn-primary btn-sm" href="#join" aria-label="Join the community"><svg viewBox="0 0 24 24"
+          aria-hidden="true">
+          <circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" />
+          <path d="M16 5.5a3.5 3.5 0 0 1 0 6.5M18.5 14.5c2 .8 3 2.8 3 5.5" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" />
+        </svg><span class="btn-text-full">Join the community</span><span class="btn-text-short">Join</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="particles" id="particles"></div>
+      <div class="glow"></div>
+      <div class="wrap">
+        <div class="iris-wrap"><svg class="iris-hero" viewBox="0 0 560 560" aria-hidden="true">
+            <g class="rays">
+              <line x1="453.6" y1="280.0" x2="509.6" y2="280.0" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="452.1" y1="302.7" x2="540.9" y2="314.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="447.7" y1="324.9" x2="501.8" y2="339.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="440.4" y1="346.4" x2="523.2" y2="380.7" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="430.3" y1="366.8" x2="478.8" y2="394.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="417.7" y1="385.7" x2="488.8" y2="440.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="402.8" y1="402.8" x2="442.4" y2="442.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="385.7" y1="417.7" x2="440.2" y2="488.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="366.8" y1="430.3" x2="394.8" y2="478.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="346.4" y1="440.4" x2="380.7" y2="523.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="324.9" y1="447.7" x2="339.4" y2="501.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="302.7" y1="452.1" x2="314.4" y2="540.9" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="280.0" y1="453.6" x2="280.0" y2="509.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="257.3" y1="452.1" x2="245.6" y2="540.9" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="235.1" y1="447.7" x2="220.6" y2="501.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="213.6" y1="440.4" x2="179.3" y2="523.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="193.2" y1="430.3" x2="165.2" y2="478.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="174.3" y1="417.7" x2="119.8" y2="488.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="157.2" y1="402.8" x2="117.6" y2="442.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="142.3" y1="385.7" x2="71.2" y2="440.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="129.7" y1="366.8" x2="81.2" y2="394.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="119.6" y1="346.4" x2="36.8" y2="380.7" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="112.3" y1="324.9" x2="58.2" y2="339.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="107.9" y1="302.7" x2="19.1" y2="314.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="106.4" y1="280.0" x2="50.4" y2="280.0" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="107.9" y1="257.3" x2="19.1" y2="245.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="112.3" y1="235.1" x2="58.2" y2="220.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="119.6" y1="213.6" x2="36.8" y2="179.3" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="129.7" y1="193.2" x2="81.2" y2="165.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="142.3" y1="174.3" x2="71.2" y2="119.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="157.2" y1="157.2" x2="117.6" y2="117.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="174.3" y1="142.3" x2="119.8" y2="71.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="193.2" y1="129.7" x2="165.2" y2="81.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="213.6" y1="119.6" x2="179.3" y2="36.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="235.1" y1="112.3" x2="220.6" y2="58.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="257.3" y1="107.9" x2="245.6" y2="19.1" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="280.0" y1="106.4" x2="280.0" y2="50.4" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="302.7" y1="107.9" x2="314.4" y2="19.1" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="324.9" y1="112.3" x2="339.4" y2="58.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="346.4" y1="119.6" x2="380.7" y2="36.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="366.8" y1="129.7" x2="394.8" y2="81.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="385.7" y1="142.3" x2="440.2" y2="71.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="402.8" y1="157.2" x2="442.4" y2="117.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="417.7" y1="174.3" x2="488.8" y2="119.8" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="430.3" y1="193.2" x2="478.8" y2="165.2" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="440.4" y1="213.6" x2="523.2" y2="179.3" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <line x1="447.7" y1="235.1" x2="501.8" y2="220.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.5"
+                stroke-linecap="round" />
+              <line x1="452.1" y1="257.3" x2="540.9" y2="245.6" stroke="#F26A1B" stroke-width="2" stroke-opacity="0.22"
+                stroke-linecap="round" />
+              <circle cx="280.0" cy="280.0" r="196" fill="none" stroke="#D2500F" stroke-opacity="0.3"
+                stroke-width="2" />
+              <circle cx="280.0" cy="280.0" r="274" fill="none" stroke="#D2500F" stroke-opacity="0.12"
+                stroke-width="2" />
+            </g><svg x="140.0" y="140.0" width="280.0" height="280.0" viewBox="0 0 200 200" overflow="visible">
+              <defs>
+                <mask id="im" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+                  <rect width="200" height="200" fill="#fff" />
+                  <path
+                    d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                </mask>
+              </defs>
+              <g transform="translate(100 112) scale(0.86) translate(-100 -100)">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="#D2500F" stroke-width="10" />
+                <g class="blades" mask="url(#im)">
+                  <path
+                    d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                    fill="#F26A1B" />
+                  <path
+                    d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                    fill="#FF9A4A" />
+                  <path
+                    d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                    fill="#F26A1B" />
+                  <path
+                    d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                    fill="#FF9A4A" />
+                  <path
+                    d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                    fill="#F26A1B" />
+                  <path
+                    d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                    fill="#FF9A4A" />
+                </g>
+              </g>
+              <path d="M100 30 L100 20" stroke="#FFF1E6" stroke-width="5" stroke-linecap="round" fill="none" />
+              <g transform="translate(100 21) rotate(-28)">
+                <path d="M0 0 Q20 -15 42 0 Q20 15 0 0 Z" fill="#FFF1E6" />
+              </g>
+            </svg>
+          </svg></div>
+        <h1>AI won&#8217;t replace creators.<br>It will <em class="s">reveal</em> them.<span class="typewriter-cursor"
+            aria-hidden="true"></span></h1>
+        <p class="whisper" style="margin-left:auto;margin-right:auto">A movement for India&#8217;s video editors,
+          animators and designers.</p>
+        <div class="btns"><a class="btn btn-primary" href="#join"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+              <path d="M16 5.5a3.5 3.5 0 0 1 0 6.5M18.5 14.5c2 .8 3 2.8 3 5.5" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" />
+            </svg><span>Join the community</span></a><a class="btn btn-ghost"
+            href="https://www.youtube.com/@TeamOranzAI"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M10 9.5v5l4.5-2.5z" fill="currentColor" />
+            </svg><span>Watch how we think</span></a></div>
+      </div>
+      <div class="scrollcue" aria-hidden="true">SCROLL</div>
+    </section>
+
+    <!-- STATS COUNTER -->
+    <!-- <section class="sec dark2">
+<div class="wrap center">
+<div class="stats rv">
+  <div class="stat"><div class="stat-number" data-target="6" data-suffix="+">0</div><div class="stat-label">Creative crafts</div></div>
+  <div class="stat"><div class="stat-number" data-target="10000" data-suffix="+">0</div><div class="stat-label">Community members</div></div>
+  <div class="stat"><div class="stat-number" data-target="50" data-suffix="+">0</div><div class="stat-label">Episodes & masterclasses</div></div>
+  <div class="stat"><div class="stat-number" data-target="100" data-suffix="%">0</div><div class="stat-label">India-focused</div></div>
+</div>
+</div>
+</section> -->
+
+    <section class="sec dark2" id="why">
+      <div class="wrap center">
+        <p class="kick rv">The noise</p>
+        <h2 class="say rv d1">Every day, the world makes <em class="s">more</em> than ever.</h2>
+        <svg class="wall" id="wall" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" role="img"
+          aria-label="A wall of grey thumbnails where a few light up orange and one stands out as you scroll">
+          <rect x="2.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="32.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="92.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="122.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="182.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="212.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="272.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="302.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="332.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="362.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="392.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="452.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="482.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="512.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="542.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="572.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="602.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="632.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="662.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="722.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="782.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="842.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="872.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="902.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect class="hot" x="932.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="962.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1022.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1052.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1082.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1112.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1142.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1172.0" y="2.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="2.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="32.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="62.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="92.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect class="hot" x="122.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="152.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="182.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="212.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="272.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="302.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="332.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="362.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="392.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="452.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="482.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="542.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="572.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="602.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="662.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="692.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="722.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="752.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="782.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="812.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="842.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="872.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="902.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="932.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="962.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1022.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1052.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1082.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1112.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1142.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1172.0" y="32.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="2.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="32.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="62.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="92.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="122.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="182.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect class="hot" x="212.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="242.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="272.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="302.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="332.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="362.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="392.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="422.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="452.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="482.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="542.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="572.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="602.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="662.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="722.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="752.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="782.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="842.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="872.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="902.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="932.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="962.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1022.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1052.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1082.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1112.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1142.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1172.0" y="62.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="2.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="32.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="62.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="92.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="122.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="152.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="182.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="212.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect class="hot" x="272.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="302.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="332.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="362.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="392.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="452.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="482.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="542.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="572.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect class="hot" x="602.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="632.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="662.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="692.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="722.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="782.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="842.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="872.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="902.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="932.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="962.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="992.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1022.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1052.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1082.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1112.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1142.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1172.0" y="92.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="32.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="62.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="92.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="122.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="182.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="212.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="242.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="272.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="302.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="332.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="362.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="392.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="452.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="482.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="512.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="542.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="572.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="602.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="632.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="662.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="722.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="782.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="812.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="842.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="872.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="902.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="932.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="962.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="992.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1022.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1052.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1082.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect class="hot" x="1112.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1142.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1172.0" y="122.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="32.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="92.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="122.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="152.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="182.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="212.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="272.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="302.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="332.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="362.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="392.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect class="hot" x="422.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="452.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="482.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="542.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="572.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="602.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="662.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="692.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="722.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="782.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="812.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="842.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="872.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="902.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="932.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect class="hot" x="962.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1022.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1052.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1082.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1112.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1142.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1172.0" y="152.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="2.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="32.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="92.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="122.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="152.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="182.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="212.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="272.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="302.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="332.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="362.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect class="hot" x="392.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="452.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="482.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="542.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="572.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="602.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="662.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="692.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="722.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="782.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="842.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="872.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="902.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="932.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="962.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="992.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1022.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1052.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1082.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1112.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1142.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1172.0" y="182.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="32.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="62.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="92.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="122.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="182.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="212.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="272.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="302.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="332.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="362.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="392.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="452.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="482.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="542.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="572.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="602.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="632.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="662.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="722.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="782.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="812.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="842.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="872.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="902.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="932.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="962.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1022.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1052.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1082.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1112.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1142.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1172.0" y="212.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="32.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="92.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="122.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="152.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="182.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="212.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="242.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="272.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="302.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="332.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="362.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="392.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="422.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="452.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="482.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="512.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="542.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="572.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="602.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="632.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="662.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="692.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="722.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="782.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="842.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="872.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="902.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="932.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="962.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1022.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1052.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1082.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1112.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1142.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1172.0" y="242.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="32.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="62.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="92.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="122.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="152.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="182.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="212.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="242.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="272.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="302.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="332.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="362.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="392.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="452.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="482.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="512.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="542.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect class="hot" x="572.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="602.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="662.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect class="hot" x="722.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="752.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="782.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="842.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="872.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="902.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="932.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="962.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1022.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1052.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1082.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1112.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1142.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect class="hot" x="1172.0" y="272.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="32.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="92.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="122.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="182.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="212.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="242.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="272.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect class="hot" x="302.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="332.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="362.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="392.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="422.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="452.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="482.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="512.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="542.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="572.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="602.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="662.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="722.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="752.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="782.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="842.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="872.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="902.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="932.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="962.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="992.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1022.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1052.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1082.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1112.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1142.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1172.0" y="302.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="2.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="32.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="92.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="122.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="182.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="212.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="242.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="272.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="302.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="332.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="362.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="392.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="422.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="452.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="482.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="512.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="542.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="572.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="602.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="632.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="662.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="692.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect class="hot" x="722.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="752.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="782.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="812.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="842.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="872.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect class="hot" x="902.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="932.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="962.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1022.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1052.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1082.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1112.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1142.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1172.0" y="332.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="2.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="32.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="62.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="92.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="122.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="152.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="182.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="212.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="242.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="272.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="302.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="332.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="362.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="392.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="422.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="452.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="482.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="512.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="542.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect class="hot" x="572.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="602.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="632.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="662.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="692.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="722.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="752.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect class="hot" x="782.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="812.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="842.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="872.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="902.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="932.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="962.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1022.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1052.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="1082.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1112.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect class="hot" x="1142.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1172.0" y="362.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="2.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="32.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="62.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="92.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="122.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="152.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="182.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="212.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="242.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="272.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="302.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="332.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="362.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="392.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="422.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="452.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="482.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="512.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="542.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="572.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="602.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="632.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="662.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="692.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="722.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="752.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="782.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="812.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="842.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="872.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="902.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="932.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="962.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#26233D" />
+          <rect x="992.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1022.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1052.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#3A3658" />
+          <rect x="1082.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1112.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <rect x="1142.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#312D4D" />
+          <rect x="1172.0" y="392.0" width="26.0" height="26.0" rx="3" fill="#2A2743" />
+          <g class="star">
+            <rect x="532" y="142" width="166" height="151" rx="14" fill="#F26A1B" opacity=".25" />
+            <rect x="540" y="150" width="150" height="135" rx="10" fill="#F26A1B" />
+            <circle cx="615" cy="218" r="30" fill="#FFF1E6" />
+            <path d="M606 203 v30 l24 -15 z" fill="#1C1A33" />
+          </g>
+        </svg>
+        <p class="whisper rv">Most of it disappears in a scroll. A few pieces stop you.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap center">
+        <p class="kick rv">The signal</p>
+        <h2 class="say rv d1">What they have, no tool can <em class="s">generate.</em></h2>
+        <div class="trio">
+          <div class="card rv" data-tilt><svg viewBox="0 0 420 300" aria-hidden="true">
+              <rect x="30" y="40" width="60" height="60" rx="12" fill="#5A5578" />
+              <rect x="104" y="40" width="60" height="60" rx="12" fill="#5A5578" />
+              <rect x="178" y="40" width="60" height="60" rx="12" fill="#3E3A5C" />
+              <rect x="252" y="40" width="60" height="60" rx="12" fill="#6A6590" />
+              <rect x="326" y="40" width="60" height="60" rx="12" fill="#4A4668" />
+              <rect x="30" y="114" width="60" height="60" rx="12" fill="#4A4668" />
+              <rect x="104" y="114" width="60" height="60" rx="12" fill="#6A6590" />
+              <rect x="178" y="114" width="60" height="60" rx="12" fill="#3E3A5C" />
+              <rect x="252" y="114" width="60" height="60" rx="12" fill="#F26A1B" />
+              <rect x="244" y="106" width="76" height="76" rx="16" fill="none" stroke="#FFF1E6" stroke-width="4" />
+              <rect x="326" y="114" width="60" height="60" rx="12" fill="#5A5578" />
+              <rect x="30" y="188" width="60" height="60" rx="12" fill="#5A5578" />
+              <rect x="104" y="188" width="60" height="60" rx="12" fill="#6A6590" />
+              <rect x="178" y="188" width="60" height="60" rx="12" fill="#6A6590" />
+              <rect x="252" y="188" width="60" height="60" rx="12" fill="#6A6590" />
+              <rect x="326" y="188" width="60" height="60" rx="12" fill="#5A5578" />
+            </svg>
+            <div class="t">
+              <h3>Taste</h3>
+              <p>Knowing what&#8217;s good.</p>
+            </div>
+          </div>
+          <div class="card rv d1" data-tilt><svg viewBox="0 0 420 300" aria-hidden="true">
+              <rect x="35" y="70" width="120" height="44" rx="8" fill="#8C7BFF" />
+              <rect x="165" y="70" width="90" height="44" rx="8" fill="#8C7BFF" />
+              <rect x="265" y="70" width="150" height="44" rx="8" fill="#8C7BFF" />
+              <rect x="55" y="132" width="90" height="44" rx="8" fill="#F26A1B" />
+              <rect x="155" y="132" width="150" height="44" rx="8" fill="#F26A1B" />
+              <rect x="315" y="132" width="90" height="44" rx="8" fill="#F26A1B" />
+              <rect x="35" y="194" width="370" height="44" rx="8" fill="#3FBF9F" />
+              <line x1="232" y1="44" x2="232" y2="270" stroke="#FFF1E6" stroke-width="4" stroke-dasharray="10 8" />
+              <g transform="translate(232 36)">
+                <circle cx="-12" cy="-14" r="9" fill="none" stroke="#FFF1E6" stroke-width="4" />
+                <circle cx="12" cy="-14" r="9" fill="none" stroke="#FFF1E6" stroke-width="4" />
+                <path d="M-6 -7 L8 12 M6 -7 L-8 12" stroke="#FFF1E6" stroke-width="4" stroke-linecap="round" />
+              </g>
+            </svg>
+            <div class="t">
+              <h3>Judgment</h3>
+              <p>Knowing what to cut.</p>
+            </div>
+          </div>
+          <div class="card rv d2" data-tilt><svg viewBox="0 0 420 300" aria-hidden="true">
+              <line x1="30" y1="262" x2="390" y2="262" stroke="#4A4668" stroke-width="3" />
+              <path
+                d="M30.0 230.0 L39.0 229.6 L48.0 228.5 L57.0 226.6 L66.0 223.9 L75.0 220.6 L84.0 216.6 L93.0 212.0 L102.0 206.8 L111.0 201.1 L120.0 195.0 L129.0 188.5 L138.0 181.6 L147.0 174.6 L156.0 167.3 L165.0 160.0 L174.0 152.7 L183.0 145.4 L192.0 138.4 L201.0 131.5 L210.0 125.0 L219.0 118.9 L228.0 113.2 L237.0 108.0 L246.0 103.4 L255.0 99.4 L264.0 96.1 L273.0 93.4 L282.0 91.5 L291.0 90.4 L300.0 90.0 L309.0 97.0 L318.0 104.0 L327.0 111.0 L336.0 118.0 L345.0 125.0 L354.0 132.0 L363.0 139.0 L372.0 146.0 L381.0 153.0 L390.0 160.0"
+                fill="none" stroke="#F26A1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="30" cy="230" r="9" fill="#FFF1E6" />
+              <circle cx="300" cy="90" r="14" fill="#FFF1E6" />
+              <circle cx="390" cy="160" r="9" fill="#FFF1E6" />
+            </svg>
+            <div class="t">
+              <h3>Story</h3>
+              <p>Knowing why it matters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec orange purpose"><svg class="bg" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <mask id="pbg" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+            <rect width="200" height="200" fill="#fff" />
+            <path
+              d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+              fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            <path
+              d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+              fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            <path
+              d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+              fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            <path
+              d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+              fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            <path
+              d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+              fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            <path
+              d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+              fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+          </mask>
+        </defs>
+        <g transform="translate(100 112) scale(0.86) translate(-100 -100)">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#D2500F" stroke-width="10" />
+          <g mask="url(#pbg)">
+            <path
+              d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+              fill="#1C1A33" />
+            <path
+              d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+              fill="#D2500F" />
+            <path
+              d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+              fill="#1C1A33" />
+            <path
+              d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+              fill="#D2500F" />
+            <path
+              d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+              fill="#1C1A33" />
+            <path
+              d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+              fill="#D2500F" />
+          </g>
+        </g>
+        <path d="M100 30 L100 20" stroke="#1C1A33" stroke-width="5" stroke-linecap="round" fill="none" />
+        <g transform="translate(100 21) rotate(-28)">
+          <path d="M0 0 Q20 -15 42 0 Q20 15 0 0 Z" fill="#1C1A33" />
+        </g>
+      </svg>
+      <div class="wrap">
+        <p class="kick rv" style="color:var(--night)">Our purpose</p>
+        <h2 class="rv d1">To build India&#8217;s next generation of storytellers. The ones AI <em
+            class="s">can&#8217;t</em> replace.</h2>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap crafts">
+        <div class="rv-left"><svg class="logo-diagram" viewBox="-60 0 760 640" role="img"
+            aria-label="The OranzAI logo with its six segments labelled Editors, Animators, Designers, Writers, Strategists and Storytellers"><svg
+              x="140.8" y="140.8" width="358.4" height="358.4" viewBox="0 0 200 200">
+              <defs>
+                <mask id="ld" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+                  <rect width="200" height="200" fill="#fff" />
+                  <path
+                    d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                  <path
+                    d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                    fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+                </mask>
+              </defs>
+              <g transform="translate(100 112) scale(0.86) translate(-100 -100)">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="#D2500F" stroke-width="10" />
+                <g mask="url(#ld)">
+                  <path
+                    d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                    fill="#F26A1B" />
+                  <path
+                    d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                    fill="#FF9A4A" />
+                  <path
+                    d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                    fill="#F26A1B" />
+                  <path
+                    d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                    fill="#FF9A4A" />
+                  <path
+                    d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                    fill="#F26A1B" />
+                  <path
+                    d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                    fill="#FF9A4A" />
+                </g>
+              </g>
+              <path d="M100 30 L100 20" stroke="#FFF1E6" stroke-width="5" stroke-linecap="round" fill="none" />
+              <g transform="translate(100 21) rotate(-28)">
+                <path d="M0 0 Q20 -15 42 0 Q20 15 0 0 Z" fill="#FFF1E6" />
+              </g>
+            </svg>
+            <line x1="353" y1="283" x2="448" y2="120" stroke="#FF9A4A" stroke-width="2" stroke-dasharray="4 6" />
+            <circle cx="448" cy="120" r="6" fill="#FF9A4A" /><text x="462" y="104" text-anchor="start"
+              font-family="Bricolage Grotesque, sans-serif" font-size="26" font-weight="700"
+              fill="#FFFFFF">Editors</text>
+            <line x1="387" y1="341" x2="576" y2="341" stroke="#FF9A4A" stroke-width="2" stroke-dasharray="4 6" />
+            <circle cx="576" cy="341" r="6" fill="#FF9A4A" /><text x="590" y="349" text-anchor="start"
+              font-family="Bricolage Grotesque, sans-serif" font-size="26" font-weight="700"
+              fill="#FFFFFF">Animators</text>
+            <line x1="354" y1="400" x2="448" y2="563" stroke="#FF9A4A" stroke-width="2" stroke-dasharray="4 6" />
+            <circle cx="448" cy="563" r="6" fill="#FF9A4A" /><text x="462" y="593" text-anchor="start"
+              font-family="Bricolage Grotesque, sans-serif" font-size="26" font-weight="700"
+              fill="#FFFFFF">Designers</text>
+            <line x1="287" y1="400" x2="192" y2="563" stroke="#FF9A4A" stroke-width="2" stroke-dasharray="4 6" />
+            <circle cx="192" cy="563" r="6" fill="#FF9A4A" /><text x="178" y="593" text-anchor="end"
+              font-family="Bricolage Grotesque, sans-serif" font-size="26" font-weight="700"
+              fill="#FFFFFF">Writers</text>
+            <line x1="253" y1="342" x2="64" y2="342" stroke="#FF9A4A" stroke-width="2" stroke-dasharray="4 6" />
+            <circle cx="64" cy="342" r="6" fill="#FF9A4A" /><text x="50" y="350" text-anchor="end"
+              font-family="Bricolage Grotesque, sans-serif" font-size="26" font-weight="700"
+              fill="#FFFFFF">Strategists</text>
+            <line x1="286" y1="284" x2="192" y2="120" stroke="#FF9A4A" stroke-width="2" stroke-dasharray="4 6" />
+            <circle cx="192" cy="120" r="6" fill="#FF9A4A" /><text x="178" y="104" text-anchor="end"
+              font-family="Bricolage Grotesque, sans-serif" font-size="26" font-weight="700"
+              fill="#FFFFFF">Storytellers</text>
+          </svg></div>
+        <div class="rv-right">
+          <p class="kick">One orange. Six crafts.</p>
+          <h2 class="say">Cut it open. You&#8217;ll see a <em class="s">lens.</em></h2>
+          <p class="whisper">Different crafts, one community, one way of seeing the world.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec dark2" id="paths">
+      <div class="wrap">
+        <p class="kick rv">Choose your starting point</p>
+        <h2 class="say rv d1">Four paths. <em class="s">One</em> community.</h2>
+        <div class="tabs rv d2" role="tablist" aria-label="Choose your path"><button class="tab" role="tab"
+            id="t-editor" aria-controls="p-editor" aria-selected="true" tabindex="0">Video editors</button><button
+            class="tab" role="tab" id="t-animator" aria-controls="p-animator" aria-selected="false"
+            tabindex="-1">Animators</button><button class="tab" role="tab" id="t-designer" aria-controls="p-designer"
+            aria-selected="false" tabindex="-1">Designers</button><button class="tab" role="tab" id="t-studio"
+            aria-controls="p-studio" aria-selected="false" tabindex="-1">Studios &amp; brands</button></div>
+        <div class="panel show" role="tabpanel" id="p-editor" aria-labelledby="t-editor">
+          <div class="ptext">
+            <h3>Video editors</h3>
+            <p class="lead">Cut stories people can&#8217;t stop watching.</p>
+            <ul>
+              <li>Story structure, pacing and hooks</li>
+              <li>Sound and colour that carry emotion</li>
+              <li>AI-assisted workflows, done right</li>
+            </ul><a class="btn btn-primary" href="#join"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg><span>Join the waitlist</span></a>
+          </div><svg viewBox="0 0 520 300" aria-hidden="true" class="pv">
+            <rect width="520" height="300" rx="20" fill="#14122A" />
+            <rect x="30" y="70" width="130" height="38" rx="8" fill="#8C7BFF" />
+            <rect x="180" y="70" width="90" height="38" rx="8" fill="#8C7BFF" />
+            <rect x="290" y="70" width="170" height="38" rx="8" fill="#8C7BFF" />
+            <rect x="60" y="126" width="100" height="38" rx="8" fill="#F26A1B" />
+            <rect x="180" y="126" width="160" height="38" rx="8" fill="#F26A1B" />
+            <rect x="360" y="126" width="100" height="38" rx="8" fill="#F26A1B" />
+            <rect x="30" y="182" width="430" height="38" rx="8" fill="#3FBF9F" />
+            <line class="playhead" x1="60" y1="46" x2="60" y2="250" stroke="#FFF1E6" stroke-width="4" /><text x="490"
+              y="36" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="16"
+              fill="#FF9A4A">00:00:14:08</text>
+          </svg>
+        </div>
+        <div class="panel" role="tabpanel" id="p-animator" aria-labelledby="t-animator" hidden>
+          <div class="ptext">
+            <h3>Animators</h3>
+            <p class="lead">Make motion that feels alive.</p>
+            <ul>
+              <li>Timing, spacing and easing</li>
+              <li>Motion design for brands and YouTube</li>
+              <li>AI tools inside a real pipeline</li>
+            </ul><a class="btn btn-primary" href="#join"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg><span>Join the waitlist</span></a>
+          </div><svg viewBox="0 0 520 300" aria-hidden="true" class="pv">
+            <rect width="520" height="300" rx="20" fill="#14122A" />
+            <path d="M40 250 C220 250 300 60 480 60" fill="none" stroke="#FF9A4A" stroke-width="3"
+              stroke-dasharray="6 8" />
+            <circle cx="40" cy="150" r="14" fill="#F26A1B" opacity="0.30" />
+            <circle cx="59" cy="150" r="10" fill="#F26A1B" opacity="0.39" />
+            <circle cx="109" cy="150" r="10" fill="#F26A1B" opacity="0.47" />
+            <circle cx="179" cy="150" r="10" fill="#F26A1B" opacity="0.56" />
+            <circle cx="260" cy="150" r="10" fill="#F26A1B" opacity="0.65" />
+            <circle cx="341" cy="150" r="10" fill="#F26A1B" opacity="0.74" />
+            <circle cx="411" cy="150" r="10" fill="#F26A1B" opacity="0.82" />
+            <circle cx="461" cy="150" r="10" fill="#F26A1B" opacity="0.91" />
+            <circle cx="480" cy="150" r="14" fill="#F26A1B" opacity="1.00" />
+            <circle class="ball" cx="40" cy="150" r="22" fill="#FFF1E6" />
+          </svg>
+        </div>
+        <div class="panel" role="tabpanel" id="p-designer" aria-labelledby="t-designer" hidden>
+          <div class="ptext">
+            <h3>Designers</h3>
+            <p class="lead">Design that earns attention and trust.</p>
+            <ul>
+              <li>Layout, type and colour systems</li>
+              <li>Thumbnails, carousels and brand kits</li>
+              <li>Critique, references and taste</li>
+            </ul><a class="btn btn-primary" href="#join"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg><span>Join the waitlist</span></a>
+          </div><svg viewBox="0 0 520 300" aria-hidden="true" class="pv">
+            <rect width="520" height="300" rx="20" fill="#14122A" />
+            <line x1="87" y1="0" x2="87" y2="300" stroke="#2A2743" stroke-width="2" />
+            <line x1="173" y1="0" x2="173" y2="300" stroke="#2A2743" stroke-width="2" />
+            <line x1="260" y1="0" x2="260" y2="300" stroke="#2A2743" stroke-width="2" />
+            <line x1="347" y1="0" x2="347" y2="300" stroke="#2A2743" stroke-width="2" />
+            <line x1="433" y1="0" x2="433" y2="300" stroke="#2A2743" stroke-width="2" />
+            <rect class="blk a" x="40" y="40" width="250" height="220" rx="12" fill="#FFF1E6" />
+            <rect class="blk b" x="310" y="40" width="170" height="100" rx="12" fill="#F26A1B" />
+            <rect class="blk c" x="310" y="160" width="170" height="100" rx="12" fill="#FF9A4A" />
+            <rect x="64" y="70" width="150" height="18" rx="9" fill="#1C1A33" />
+            <rect x="64" y="100" width="100" height="12" rx="6" fill="#B9AFA2" />
+          </svg>
+        </div>
+        <div class="panel" role="tabpanel" id="p-studio" aria-labelledby="t-studio" hidden>
+          <div class="ptext">
+            <h3>Studios &amp; brands</h3>
+            <p class="lead">Hire creators who think, not just click.</p>
+            <ul>
+              <li>Talent trained on real briefs</li>
+              <li>Portfolios that show judgment, not just tools</li>
+              <li>A shortlist matched to your work</li>
+            </ul><a class="btn btn-primary" href="#join"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg><span>Hire from OranzAI</span></a>
+          </div><svg viewBox="0 0 520 300" aria-hidden="true" class="pv">
+            <rect width="520" height="300" rx="20" fill="#14122A" />
+            <rect class="card0" x="40" y="60" width="130" height="180" rx="14" fill="#24213C" stroke="#3A3658"
+              stroke-width="3" />
+            <circle cx="105" cy="110" r="26" fill="#FF9A4A" />
+            <rect x="65" y="155" width="80" height="12" rx="6" fill="#FFF1E6" />
+            <rect x="75" y="178" width="60" height="10" rx="5" fill="#6A6590" />
+            <rect class="card1" x="200" y="60" width="130" height="180" rx="14" fill="#24213C" stroke="#F26A1B"
+              stroke-width="3" />
+            <circle cx="265" cy="110" r="26" fill="#F26A1B" />
+            <rect x="225" y="155" width="80" height="12" rx="6" fill="#FFF1E6" />
+            <rect x="235" y="178" width="60" height="10" rx="5" fill="#6A6590" />
+            <rect class="card2" x="360" y="60" width="130" height="180" rx="14" fill="#24213C" stroke="#3A3658"
+              stroke-width="3" />
+            <circle cx="425" cy="110" r="26" fill="#8C7BFF" />
+            <rect x="385" y="155" width="80" height="12" rx="6" fill="#FFF1E6" />
+            <rect x="395" y="178" width="60" height="10" rx="5" fill="#6A6590" />
+            <path d="M245 235 l14 14 l28 -30" fill="none" stroke="#FFF1E6" stroke-width="6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec light">
+      <div class="wrap signal">
+        <div>
+          <p class="kick rv">Seen for your taste</p>
+          <h2 class="say rv d1">Your portfolio shows what you <em class="s">made.</em> We show how you <em
+              class="s">think.</em></h2>
+          <p class="whisper rv d2">When studios hire from OranzAI, they see the judgment behind the work, not just a
+            list of software.</p>
+        </div>
+        <div class="profile rv d1" aria-label="An example creator profile">
+          <div class="who">
+            <div class="av" aria-hidden="true">A</div>
+            <div>
+              <div class="nm">Arjun Mehta</div>
+              <div class="rl">Video editor, Mumbai</div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="row"><span>Taste</span><span>92</span></div>
+            <div class="track">
+              <div class="fill" style="--w:92%"></div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="row"><span>Story</span><span>86</span></div>
+            <div class="track">
+              <div class="fill" style="--w:86%"></div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="row"><span>Judgment</span><span>88</span></div>
+            <div class="track">
+              <div class="fill" style="--w:88%"></div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="row"><span>Craft</span><span>80</span></div>
+            <div class="track">
+              <div class="fill" style="--w:80%"></div>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="row"><span>Tool fluency</span><span>74</span></div>
+            <div class="track">
+              <div class="fill" style="--w:74%"></div>
+            </div>
+          </div>
+          <p class="note">ILLUSTRATIVE PROFILE</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec light" style="padding-top:0">
+      <div class="wrap">
+        <p class="kick rv">What we believe</p>
+      </div>
+      <div class="marq" aria-label="What we believe">
+        <div class="track"><span>Taste is a skill, not a gift.</span><span>Tools change. Fundamentals
+            compound.</span><span>Critique is care.</span><span>Make it before you&#8217;re ready.</span><span>The story
+            is the product.</span><span>Credit the crew.</span><span>Taste is a skill, not a gift.</span><span>Tools
+            change. Fundamentals compound.</span><span>Critique is care.</span><span>Make it before you&#8217;re
+            ready.</span><span>The story is the product.</span><span>Credit the crew.</span></div>
+      </div>
+    </section>
+
+    <section class="sec" id="watch">
+      <div class="wrap">
+        <p class="kick rv">Watch how we think</p>
+        <h2 class="say rv d1">Before we teach, we think <em class="s">out loud.</em></h2>
+        <div class="watch rv d2"><a class="ep" href="https://www.youtube.com/@TeamOranzAI"><span class="thumb"><svg
+                viewBox="0 0 640 360" aria-hidden="true">
+                <rect width="640" height="360" fill="#1C1A33" />
+                <g transform="translate(51 101) rotate(-5) scale(1.07)">
+                  <path d="M0 40 H300 V100 A22 22 0 0 0 300 144 V210 H0 V144 A22 22 0 0 0 0 100 Z" fill="#FF9A4A" />
+                  <text x="28" y="142" font-family="Bricolage Grotesque, sans-serif" font-size="78" font-weight="800"
+                    fill="#1C1A33">$1B</text>
+                </g>
+                <g transform="translate(371 94) rotate(6) scale(1.07)">
+                  <rect x="0" y="30" width="200" height="170" rx="10" fill="#3A3658" />
+                  <rect x="20" y="0" width="160" height="40" rx="8" fill="#4A4668" /><text x="100" y="135"
+                    text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="36" font-weight="800"
+                    fill="#FFF1E6">LAYOFFS</text>
+                </g>
+              </svg><span class="badge new">New</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" fill="#1C1A33" />
+                </svg></span></span><span class="num">Episode 01</span><span class="hi" lang="hi">Toy Story 5 ने ₹8,000
+              करोड़ कमाए। फिर Pixar ने लोगों को क्यों निकाला?</span><span class="en">The Disney Layoffs, Explained
+              Properly</span></a><a class="ep" href="https://www.youtube.com/@TeamOranzAI"><span class="thumb"><svg
+                viewBox="0 0 640 360" aria-hidden="true">
+                <rect width="640" height="360" fill="#1C1A33" />
+                <circle cx="320" cy="180" r="94" fill="#F26A1B" />
+                <rect x="284" y="133" width="25" height="94" rx="6" fill="#1C1A33" />
+                <rect x="331" y="133" width="25" height="94" rx="6" fill="#1C1A33" />
+              </svg><span class="badge">Coming soon</span><span class="play"><svg viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path d="M8 5v14l11-7z" fill="#1C1A33" />
+                </svg></span></span><span class="num">Episode 02</span><span class="hi" lang="hi">OpenAI ने अपनी ही AI
+              को क्यों रोका?</span><span class="en">AI vs AI, Explained Properly</span></a></div>
+        <div class="btns" style="margin-top:36px"><a class="btn btn-primary"
+            href="https://www.youtube.com/@TeamOranzAI"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M10 9.5v5l4.5-2.5z" fill="currentColor" />
+            </svg><span>Subscribe on YouTube</span></a><a class="btn btn-ghost"
+            href="https://www.instagram.com/oranz.ai/"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" />
+            </svg><span>Follow on Instagram</span></a></div>
+      </div>
+    </section>
+
+    <section class="sec light" id="faq">
+      <div class="wrap center">
+        <p class="kick rv">Questions</p>
+        <h2 class="say rv d1">Got questions? <em class="s">Good.</em></h2>
+        <div class="faq" style="text-align:left">
+          <details class="rv">
+            <summary>Is OranzAI a course?</summary>
+            <p>It&#8217;s a community first. Programs and masterclasses are there when you want to go deeper.</p>
+          </details>
+          <details class="rv">
+            <summary>Who is it for?</summary>
+            <p>Video editors, animators and designers in India, and anyone curious about how creative work is changing
+              with AI.</p>
+          </details>
+          <details class="rv">
+            <summary>Do I need to know AI tools already?</summary>
+            <p>No. We teach the craft first, then how to use AI inside it.</p>
+          </details>
+          <details class="rv">
+            <summary>Is the masterclass free?</summary>
+            <p>The community is free to join. Masterclasses have early-bird pricing for community members.</p>
+          </details>
+          <details class="rv">
+            <summary>What language is it in?</summary>
+            <p>Hinglish, the way most of India&#8217;s creators actually talk.</p>
+          </details>
+          <details class="rv">
+            <summary>Can studios hire from OranzAI?</summary>
+            <p>Yes. Reach out via the community and we&#8217;ll match you with creators who fit your brief.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec orange final" id="join">
+      <svg class="fl" style="left:6%;top:16%;width:120px" viewBox="0 0 200 200" aria-hidden="true">
+        <path
+          d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+          fill="#D2500F" />
+      </svg>
+      <svg class="fl" style="right:8%;bottom:14%;width:150px;animation-delay:-3s" viewBox="0 0 200 200"
+        aria-hidden="true">
+        <path
+          d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+          fill="#FFF1E6" />
+      </svg>
+      <div class="wrap">
+        <h2 class="rv">Come build what<br>AI <em class="s">can&#8217;t.</em></h2>
+        <div class="btns rv d1"><a class="btn btn-dark" href="#"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+              <path d="M16 5.5a3.5 3.5 0 0 1 0 6.5M18.5 14.5c2 .8 3 2.8 3 5.5" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" />
+            </svg><span>Join the community</span></a><a class="btn btn-dark"
+            href="https://www.youtube.com/@TeamOranzAI"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M10 9.5v5l4.5-2.5z" fill="currentColor" />
+            </svg><span>Subscribe on YouTube</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap"><a class="brand" href="#top"><svg width="38" height="38" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <mask id="ft" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+              <rect width="200" height="200" fill="#fff" />
+              <path
+                d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+              <path
+                d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                fill="none" stroke="#000" stroke-width="3.5" stroke-linejoin="round" />
+            </mask>
+          </defs>
+          <g transform="translate(100 112) scale(0.86) translate(-100 -100)">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="#D2500F" stroke-width="10" />
+            <g mask="url(#ft)">
+              <path
+                d="M100.00 22.00 A78 78 0 0 1 167.55 61.00 Q142.24 87.33 119.81 102.78 L112.31 84.24 Q110.15 57.08 100.00 22.00 Z"
+                fill="#F26A1B" />
+              <path
+                d="M167.55 61.00 A78 78 0 0 1 167.55 139.00 Q132.09 130.24 107.49 118.54 L119.81 102.78 Q142.24 87.33 167.55 61.00 Z"
+                fill="#FF9A4A" />
+              <path
+                d="M167.55 139.00 A78 78 0 0 1 100.00 178.00 Q89.85 142.92 87.69 115.76 L107.49 118.54 Q132.09 130.24 167.55 139.00 Z"
+                fill="#F26A1B" />
+              <path
+                d="M100.00 178.00 A78 78 0 0 1 32.45 139.00 Q57.76 112.67 80.19 97.22 L87.69 115.76 Q89.85 142.92 100.00 178.00 Z"
+                fill="#FF9A4A" />
+              <path
+                d="M32.45 139.00 A78 78 0 0 1 32.45 61.00 Q67.91 69.76 92.51 81.46 L80.19 97.22 Q57.76 112.67 32.45 139.00 Z"
+                fill="#F26A1B" />
+              <path
+                d="M32.45 61.00 A78 78 0 0 1 100.00 22.00 Q110.15 57.08 112.31 84.24 L92.51 81.46 Q67.91 69.76 32.45 61.00 Z"
+                fill="#FF9A4A" />
+            </g>
+          </g>
+          <path d="M100 30 L100 20" stroke="#FFF1E6" stroke-width="5" stroke-linecap="round" fill="none" />
+          <g transform="translate(100 21) rotate(-28)">
+            <path d="M0 0 Q20 -15 42 0 Q20 15 0 0 Z" fill="#FFF1E6" />
+          </g>
+        </svg><span>Oranz<span class="ai">AI</span></span></a>
+      <nav aria-label="Footer"><a href="https://www.youtube.com/@TeamOranzAI">YouTube</a><a
+          href="https://www.instagram.com/oranz.ai/">Instagram</a><a href="#paths">Hire from us</a></nav>
+      <small>© 2026 OranzAI</small>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <script>
+    (function () {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const isFine = window.matchMedia('(pointer:fine)').matches;
+
+      // ==================
+      // LOADING SCREEN
+      // ==================
+      window.addEventListener('load', () => {
+        setTimeout(() => document.getElementById('loader').classList.add('done'), 600);
+      });
+
+      // ==================
+      // SCROLL PROGRESS
+      // ==================
+      const progressBar = document.getElementById('scrollProgress');
+      function updateProgress() {
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        const p = h > 0 ? (window.scrollY / h) * 100 : 0;
+        progressBar.style.width = p + '%';
+      }
+
+      // ==================
+      // NAV SOLID + BACK TO TOP
+      // ==================
+      const nav = document.querySelector('.nav');
+      const btt = document.getElementById('backToTop');
+      function onScroll() {
+        nav.classList.toggle('solid', window.scrollY > 40);
+        btt.classList.toggle('show', window.scrollY > 600);
+        updateProgress();
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // ==================
+      // CURSOR GLOW (desktop)
+      // ==================
+      if (!reduce && isFine) {
+        const glow = document.getElementById('cursorGlow');
+        let glowActive = false;
+        window.addEventListener('pointermove', e => {
+          if (!glowActive) { glow.classList.add('active'); glowActive = true; }
+          glow.style.left = e.clientX + 'px';
+          glow.style.top = e.clientY + 'px';
+        }, { passive: true });
+      }
+
+      // ==================
+      // PARTICLES
+      // ==================
+      if (!reduce) {
+        const pc = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+          const p = document.createElement('div');
+          p.className = 'particle';
+          p.style.left = Math.random() * 100 + '%';
+          p.style.animationDuration = (8 + Math.random() * 12) + 's';
+          p.style.animationDelay = (Math.random() * 10) + 's';
+          p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+          pc.appendChild(p);
+        }
+      }
+
+      // ==================
+      // INTERSECTION OBSERVER (enhanced)
+      // ==================
+      const io = new IntersectionObserver((es) => {
+        es.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            if (e.target.id === 'wall') e.target.classList.add('lit');
+            // Counter animation
+            if (e.target.classList.contains('stats')) animateCounters();
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: .2 });
+      document.querySelectorAll('.rv,.rv-left,.rv-right,.rv-scale,#wall,.signal,.stats').forEach(el => io.observe(el));
+
+      // ==================
+      // ANIMATED COUNTERS
+      // ==================
+      function animateCounters() {
+        document.querySelectorAll('.stat-number').forEach(el => {
+          const target = parseInt(el.dataset.target);
+          const suffix = el.dataset.suffix || '';
+          const duration = 2000;
+          const start = performance.now();
+          function tick(now) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const ease = 1 - Math.pow(1 - progress, 3);
+            const val = Math.round(ease * target);
+            el.textContent = val.toLocaleString() + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+      }
+
+      // ==================
+      // IRIS PARALLAX (desktop)
+      // ==================
+      if (!reduce && isFine) {
+        const iw = document.querySelector('.iris-wrap');
+        window.addEventListener('pointermove', e => {
+          const x = (e.clientX / window.innerWidth - .5);
+          const y = (e.clientY / window.innerHeight - .5);
+          iw.style.transform = `translate(${x * 18}px,${y * 18}px) rotate(${x * 6}deg)`;
+        }, { passive: true });
+      }
+
+      // ==================
+      // TILT CARDS (desktop)
+      // ==================
+      if (!reduce && isFine) {
+        document.querySelectorAll('[data-tilt]').forEach(card => {
+          card.addEventListener('pointermove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `perspective(600px) rotateY(${x * 12}deg) rotateX(${-y * 12}deg) translateY(-6px)`;
+          });
+          card.addEventListener('pointerleave', () => {
+            card.style.transform = '';
+          });
+        });
+      }
+
+      // ==================
+      // BUTTON RIPPLE
+      // ==================
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          const ripple = document.createElement('span');
+          ripple.className = 'ripple';
+          const rect = this.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = size + 'px';
+          ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+          ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+          this.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 600);
+        });
+      });
+
+      // ==================
+      // TABS (full a11y)
+      // ==================
+      const tabs = [...document.querySelectorAll('[role="tab"]')];
+      function select(t, focus) {
+        tabs.forEach(x => {
+          const on = x === t;
+          x.setAttribute('aria-selected', on);
+          x.tabIndex = on ? 0 : -1;
+          const p = document.getElementById(x.getAttribute('aria-controls'));
+          p.hidden = !on;
+          p.classList.toggle('show', on);
+        });
+        if (focus) t.focus();
+      }
+      tabs.forEach((t, i) => {
+        t.addEventListener('click', () => select(t));
+        t.addEventListener('keydown', e => {
+          let j = null;
+          if (e.key === 'ArrowRight') j = (i + 1) % tabs.length;
+          if (e.key === 'ArrowLeft') j = (i - 1 + tabs.length) % tabs.length;
+          if (e.key === 'Home') j = 0;
+          if (e.key === 'End') j = tabs.length - 1;
+          if (j !== null) { e.preventDefault(); select(tabs[j], true); }
+        });
+      });
+
+      // ==================
+      // SMOOTH SECTION PARALLAX
+      // ==================
+      if (!reduce && isFine) {
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+          if (!ticking) {
+            requestAnimationFrame(() => {
+              const scrolled = window.scrollY;
+              const glow = document.querySelector('.hero .glow');
+              if (glow) glow.style.transform = `translate(-50%,${-50 + scrolled * 0.02}%) scale(${1 + scrolled * 0.0001})`;
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }, { passive: true });
+      }
+    })();
+  </script>
+</body>
+
+</html>
