@@ -1,0 +1,43 @@
+[build]
+  publish = "."
+
+# Global security headers for all paths
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Instant cache invalidation for HTML files to reflect updates immediately
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Long-term immutable caching for static media and fonts
+[[headers]]
+  for = "/*.(svg|png|jpg|jpeg|webp|ico|woff|woff2|ttf|js|css)"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Canonical redirect for index.html
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Custom 404 page routing
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
