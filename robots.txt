@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oranz.ai/sitemap.xml
+Sitemap: https://oranzai.com/sitemap.xml
